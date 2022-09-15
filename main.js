@@ -5,10 +5,10 @@ const deleteBtn = document.querySelector(".clearAll")
 
 inputBox.onkeyup = ()=> {
     let userData = inputBox.value;//getting user input
-    if(userData.trim() !=0 ){//iff 
+    if(userData.trim() != 0 ){//iff user values  arent olny space
         addBtn.classList.add("active");
     }else{
-        addBtn.classList.remove("active")
+        addBtn.classList.remove("active");
     }
 }
 showTask();
@@ -25,6 +25,7 @@ addBtn.onclick = ()=>{
     listArr.push(userData);// pushing or adding user data
     localStorage.setItem("New todo", JSON.stringify(listArr));//transform js object to a json string
     showTask();
+    addBtn.classList.remove("active");
 }
 
 function showTask(){
