@@ -1,0 +1,96 @@
+
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:ital@1&family=Poppins&family=Roboto&display=swap');
+
+body{
+    height: 100vh;
+    width: 100%;
+    background-color: rgb(247, 247, 247);
+    font-family: 'Poppins', sans-serif;
+}
+.wrapper{
+margin: 120px auto;
+max-width: 400px;
+background-color: rgb(143, 244, 167);
+border-radius: 12px;
+padding: 25px;
+}
+.wrapper header{
+    font-size: 30px;
+    font-weight: bolder;
+    
+}
+.wrapper .input-task{
+    display: flex;
+    height: 45px;
+    width: 100%;
+}
+
+.input-task input{
+    width: 85%;
+    height:     100%;
+    border: 1px solid;
+    border-radius: 5px;
+    font-family:'Poppins', sans-serif;
+    border-color: aqua;
+    padding: 0px 10px;
+    
+}
+.input-task button{
+    background-color: rgb(28, 138, 28) ;
+    width: 50px;
+    height: 100%;
+    border-radius: 5px;
+    margin-left: 10px;
+    color: black;
+    font-size: 15px;
+    opacity: .4;
+    pointer-events: none;
+    
+}
+.input-task button.active{
+    opacity: 1;
+    pointer-events: auto;
+}
+
+.todo-list{
+max-height: 250px;
+overflow-y: auto;
+overflow-x: hidden;
+}
+.todo-list li{
+    list-style: none;
+    height: 45px;
+    line-height: 45px;
+    padding: 0 10px;
+    border-color: aqua;
+    position: relative;
+    background-color: rgb(113, 233, 113);
+    margin-bottom: 5px;
+    cursor: pointer;
+    
+}
+.todo-list li span{
+    position: absolute;
+    right: -45px;
+    cursor: pointer;
+    transition: all .3s ease;
+
+}
+.todo-list li:hover span{
+    right: 5px;
+}
+
+.footer{
+display: flex;
+width: 100%;
+justify-content: space-between;
+}
+.footer button{
+    font-family: 'Poppins', sans-serif;
+    opacity: 0.6;
+    pointer-events: none;
+}
+.footer button.active{
+    opacity: 1;
+    pointer-events: auto;
+}
