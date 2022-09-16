@@ -94,3 +94,12 @@ justify-content: space-between;
     opacity: 1;
     pointer-events: auto;
 }
+
+@media screen and (max-width:500px) {
+    body{
+        width: 100vw;
+    }
+    .todo-list{
+        max-height: 100vh;
+    }
+}
